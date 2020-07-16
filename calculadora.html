@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt('Digite o numero que você quer miltiplicar'));
+        var numeroVezes = parseInt(prompt('Digite quantas vezes que multiplicalo'));
+
+        if(isNaN(numero)){
+            numero = 0;
+        }else if(isNaN(numeroVezes)){
+            numeroVezes = 0;
+        }
+
+        for(i = 0; i <= numeroVezes; i++){
+            var resultado = numero * i;
+
+            if(resultado % 2 != 0){
+                document.write('Impar --> ');
+            }else{
+                document.write('Par --> ');
+            }
+
+        document.write(`${numero} x ${i} = ${resultado}<br>`);
+        }
+
+    </script>
+</body>
+</html>
